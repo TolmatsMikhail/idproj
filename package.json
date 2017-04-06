@@ -1,0 +1,28 @@
+{
+  "name": "no",
+  "version": "1.0.0",
+  "description": "no",
+  "main": "index.js",
+  "scripts": {
+    "test": "no"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mihail910/idproj.git"
+  },
+  "keywords": [
+    "no"
+  ],
+  "author": "Tolmats",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mihail910/idproj/issues"
+  },
+  "homepage": "https://github.com/mihail910/idproj#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^3.0.4",
+    "gulp-sass": "^3.1.0"
+  }
+}

@@ -1,0 +1,38 @@
+.payments{
+	display: inline-block;
+	vertical-align: top;
+	width: 66%;
+	max-width: 638px;
+	background-color: #f7f8f8;
+	padding: 45px;
+	padding-left: 30px;
+}
+.payment-info {
+	width: 100%;
+	&__text{
+		font-size: 16px;
+		line-height: 21px;
+		font-family: Arial, sans-serif;
+		display: inline-block;
+		vertical-align: top;
+		width: 160px;
+		color: #535864;
+	}
+	&__text_title{
+		font-size: 16px;
+		line-height: 21px;
+		font-family: Arial, sans-serif;
+		display: inline-block;
+		vertical-align: top;
+		width: 100%;
+		color: #535864;
+		margin-bottom: 10px;
+	}
+	&__numbers{
+		display: inline-block;
+		vertical-align: top;
+		font-size: 16px;
+		line-height: 21px;
+		color: #373c43;
+	}
+}
