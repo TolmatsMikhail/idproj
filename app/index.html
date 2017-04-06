@@ -66,10 +66,60 @@
 						руб.
 					</span>
 				</p>
-
-
 			</div>
 			<!-- Блок информации об оплате конец -->
+			<!-- Заголовок формы начало -->
+			<p class="form-title">
+				Данные банковской карты
+			</p>
+			<!-- Заголовок формы конец -->
+
+			<!-- Блок ввода информации начало -->		
+
+			<form action="" class="payments__form">
+				<p class="payment-info__text_title">
+					Номер карты
+				</p>
+				<input type="text" class="payments__form__card-number-item" maxlength='4'>
+				<input type="text" class="payments__form__card-number-item" maxlength='4'>
+				<input type="text" class="payments__form__card-number-item" maxlength='4'>
+				<input type="text" class="payments__form__card-number-item" maxlength='4'>
+
+				<div class="payments__form__safe-info payments__form__safe-info_text-left">
+					<p class="payment-info__text_title">
+						Срок действия
+					</p>
+					<div class="payments__form__safe-info__month payments__form__safe-info_input">
+						01
+						<img src="img/arrow.png" height="8" width="16" alt="" class="payments__form__safe-info_input__arrow">
+					</div>
+					<input type="hidden" id="payments__form__month-value" value=''>
+
+					<div class="payments__form__safe-info__year payments__form__safe-info_input">
+						2018
+						<img src="img/arrow.png" height="8" width="16" alt="" class="payments__form__safe-info_input__arrow">
+					</div>
+					<input type="hidden" id="payments__form__month-value" value=''>
+
+				</div>
+
+				<div class="payments__form__safe-info payments__form__safe-info_text-right">
+					<p class="payment-info__text_title">
+						Код CVV2 / CVC2
+					</p>
+					<input type="text" class="payments__form__safe-info__inputcvv" />
+					<img src="img/help_image.png" height="26" width="26" alt="" class="payments__form__safe-info__inputcvv__image">
+				</div>
+
+				<input type="text" class="payments__form__holder" placeholder="Держатель карты">
+
+				<button type="submit" class="payments__form__button">
+					Оплатить
+				</button>
+			</form>
+
+			<!-- Блок ввода информации конец -->
+
 		</div>
 		<!-- Блока оплаты конец -->
 	</main>
@@ -77,5 +127,7 @@
 	<footer>
 		
 	</footer>
+
+	<script src="js/script.js"></script>
 </body>
 </html>
