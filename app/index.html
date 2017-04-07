@@ -14,6 +14,8 @@
 
 	<main>
 		<!-- Меню начало -->
+		<!-- Бургер меню 	 -->
+		<img src="img/burger.jpeg" alt="" class="menu__burger">
 		<ul class="menu">
 			<li class="menu__item">
 				<a href="" class="menu__item__link">
@@ -77,41 +79,68 @@
 			<!-- Блок ввода информации начало -->		
 
 			<form action="" class="payments__form">
-				<p class="payment-info__text_title">
+				<p class="payment-info__text_title payment-info__text_title_inForm">
 					Номер карты
 				</p>
-				<input type="text" class="payments__form__card-number-item" maxlength='4'>
+				<input type="text" class="payments__form__card-number-item" maxlength='4'">
 				<input type="text" class="payments__form__card-number-item" maxlength='4'>
 				<input type="text" class="payments__form__card-number-item" maxlength='4'>
 				<input type="text" class="payments__form__card-number-item" maxlength='4'>
 
 				<div class="payments__form__safe-info payments__form__safe-info_text-left">
-					<p class="payment-info__text_title">
+					<p class="payment-info__text_title payment-info__text_title_inForm">
 						Срок действия
 					</p>
-					<div class="payments__form__safe-info__month payments__form__safe-info_input">
-						01
-						<img src="img/arrow.png" height="8" width="16" alt="" class="payments__form__safe-info_input__arrow">
-					</div>
-					<input type="hidden" id="payments__form__month-value" value=''>
 
-					<div class="payments__form__safe-info__year payments__form__safe-info_input">
-						2018
+
+
+					<div class="payments__form__safe-info__month payments__form__safe-info_input">
+						<span class="payments__form__safe-info__month__value">01</span>
+
+						<div class="payments__form__safe-info__list__values hidden">
+							<div class="payments__form__safe-info__list__values__item">01</div>
+							<div class="payments__form__safe-info__list__values__item">02</div>
+							<div class="payments__form__safe-info__list__values__item">03</div>
+							<div class="payments__form__safe-info__list__values__item">04</div>
+							<div class="payments__form__safe-info__list__values__item">05</div>
+							<div class="payments__form__safe-info__list__values__item">06</div>
+							<div class="payments__form__safe-info__list__values__item">07</div>
+							<div class="payments__form__safe-info__list__values__item">08</div>
+							<div class="payments__form__safe-info__list__values__item">09</div>
+							<div class="payments__form__safe-info__list__values__item">10</div>
+							<div class="payments__form__safe-info__list__values__item">11</div>
+							<div class="payments__form__safe-info__list__values__item">12</div>
+						</div>
+						<input type="hidden" id="payments__form__month-value" value='01'>
 						<img src="img/arrow.png" height="8" width="16" alt="" class="payments__form__safe-info_input__arrow">
 					</div>
-					<input type="hidden" id="payments__form__month-value" value=''>
+					
+					<div class="payments__form__safe-info__year payments__form__safe-info_input">
+						<span class="payments__form__safe-info__year__value"></span>
+
+						<div class="payments__form__safe-info__list__values hidden">
+						</div>
+						<input type="hidden" id="payments__form__month-value" value='2017'>
+
+						<img src="img/arrow.png" height="8" width="16" alt="" class="payments__form__safe-info_input__arrow">
+					</div>
+					
+
+
+
+
 
 				</div>
 
 				<div class="payments__form__safe-info payments__form__safe-info_text-right">
-					<p class="payment-info__text_title">
+					<p class="payment-info__text_title payment-info__text_title_inForm">
 						Код CVV2 / CVC2
 					</p>
-					<input type="text" class="payments__form__safe-info__inputcvv" />
+					<input type="text" class="payments__form__safe-info__inputcvv" maxlength="3" />
 					<img src="img/help_image.png" height="26" width="26" alt="" class="payments__form__safe-info__inputcvv__image">
 				</div>
 
-				<input type="text" class="payments__form__holder" placeholder="Держатель карты">
+				<input type="text" class="payments__form__holder" placeholder="Держатель карты" value="">
 
 				<button type="submit" class="payments__form__button">
 					Оплатить
@@ -122,10 +151,27 @@
 
 		</div>
 		<!-- Блока оплаты конец -->
+
+		<div class="background-layout hidden">
+			
+		</div>
 	</main>
 
 	<footer>
-		
+		<div class="footer-block">
+			<p class="footer-block__paragraph">
+				Исходя из астатической системы координат Булгакова, соединение стабильно. Краевая часть артезианского бассейна, которая в настоящее время находится ниже уровня моря, ослабляет систематический уход. Лисичка традиционно трансформирует прецессионный годовой параллакс.
+			</p>
+			<p class="footer-block__paragraph">
+				Выклинивание абсолютно аккумулирует твердый pадиотелескоп Максвелла.
+			</p>
+			<p class="footer-block__paragraph">
+				Алмаз слагает горст. Делювий длительно колеблет лазерный подвижный объект.
+			</p>
+			<p class="footer-block__paragraph">
+				Устойчивость, например, параллельна. Аргумент перигелия определяет боксит. Проекция вертикально дает уходящий диабаз. Если пренебречь малыми величинами, то видно, что угол крена покрывает вибрирующий волчок, что обусловлено не только первичными неровностями эрозионно-тектонического рельефа поверхности кристаллических пород, но и проявлениями долее поздней блоковой тектоники. Засветка неба заставляет иначе взглянуть на то, что такое волчок.
+			</p>
+		</div>
 	</footer>
 
 	<script src="js/script.js"></script>

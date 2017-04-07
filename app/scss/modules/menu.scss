@@ -1,31 +1,55 @@
 .menu{
 	background-color: #191c24;
-	max-width: 322px;
-	width: 33.5%;
+	width: 320px;
 	display: inline-block;
 	vertical-align: top;
 	margin-right: 2px;
-	&__item{
-		&__link{
-			display: block;
-			color: #ffffff;
-			font-size: 18px;
-			line-height: 24px;
-			padding: 25px 0 25px 30px;
-			font-weight: bold;
-			text-decoration: none;
-			&_active {
-				background-color: #2a2d37;
-				color: #808592;
-				pointer-events: none;
-				user-select: none;   
-			}
-			&:hover {
-				background-color: #1f2229;
-			}
-		}
-		&:last-child{
-			border-top: 1px solid #20232b;
-		}
+	z-index: 15;
+	@include adaptive($d) {
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: none;
+	}
+}
+.menu__item{
+	&:last-child{
+		border-top: 1px solid #20232b;
+	}
+}
+.menu__item__link{
+	display: block;
+	color: #ffffff;
+	font-size: 18px;
+	line-height: 24px;
+	padding: 25px 0 25px 30px;
+	font-weight: bold;
+	text-decoration: none;
+	letter-spacing: 1.1px;
+	&_active {
+		background-color: #2a2d37;
+		color: #808592;
+		pointer-events: none;
+		user-select: none;   
+	}
+	&:hover {
+		background-color: #1f2229;
+	}
+}
+.menu__burger{
+	display: none;
+	widows: 60px;
+	height: 60px;
+	@include adaptive($d){
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 5px;
+		z-index: 16;
+	}
+	@include adaptive($t){
+		top: 0;
+		left: auto;
+		right: 0;
 	}
 }

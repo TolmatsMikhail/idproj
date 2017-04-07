@@ -13,3 +13,8 @@ body {
 	font-family: 'OS';
 	src: url(../fonts/OS.ttf);
 }
+.clear::before{
+	display: block;
+	content:'';
+	clear: both;
+}

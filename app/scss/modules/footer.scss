@@ -1,0 +1,24 @@
+footer{
+	width: 960px;
+	margin: 0 auto;
+	@include adaptive($d){
+		width: 100%;
+	}
+}
+.footer-block{
+	width: 638px;
+	float: right;
+	padding: 25px 29px;
+	font-size: 12px;
+	line-height: 17px;
+	font-family: Arial, sans-serif;
+	color: #7f8591;
+	background-color: #373c43;
+	@include adaptive($d){
+		margin: 0 auto;
+		float: none
+	}
+}
+.footer-block__paragraph{
+	margin-bottom: 12px;
+}

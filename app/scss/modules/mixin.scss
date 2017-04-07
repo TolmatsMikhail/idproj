@@ -1,3 +1,8 @@
+$d: 1000px;
+$t: 769px;
+$mb: 481px;
+$m: 321px;
+
 @mixin adaptive($param) {
 	@media only screen and (max-width: $param) {
 		@content;
