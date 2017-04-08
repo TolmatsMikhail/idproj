@@ -18,6 +18,12 @@ footer{
 		margin: 0 auto;
 		float: none
 	}
+	@include adaptive($t){
+		width: 95%;
+	}
+	@include adaptive($mb) {
+		width: 98%;
+	}
 }
 .footer-block__paragraph{
 	margin-bottom: 12px;

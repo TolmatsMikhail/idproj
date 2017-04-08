@@ -1,20 +1,21 @@
+@font-face{
+	font-family: 'OS';
+	src: url('../fonts/OS.eot') format('embedded-opentype');
+    src: url('../fonts/OS.eot?#iefix') format('embedded-opentype'), url('../fonts/OS.svg') format('svg'), url('../fonts/OS.woff') format('woff'), url('../fonts/OS.woff2') format('woff2');
+}
 body {
 	padding: 0;
 	margin: 0;
 	background-color: #101114;
-	font-family: 'OS';
-	* {
+	font-family: 'OS', sans-serif;
+	* { 
 		margin: 0;
 		padding: 0;
 		box-sizing: border-box;
-	}
-}
-@font-face {
-	font-family: 'OS';
-	src: url(../fonts/OS.ttf);
+	} 
 }
 .clear::before{
 	display: block;
-	content:'';
+	content:''; 
 	clear: both;
 }

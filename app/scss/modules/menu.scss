@@ -11,6 +11,9 @@
 		left: 0;
 		display: none;
 	}
+	@include adaptive($m) {
+		width: 80%;
+	}
 }
 .menu__item{
 	&:last-child{
@@ -35,11 +38,16 @@
 	&:hover {
 		background-color: #1f2229;
 	}
+	@include adaptive($m) {
+		padding: 15px;
+		font-size: 14px;
+	}
 }
 .menu__burger{
 	display: none;
-	widows: 60px;
+	width: 60px;
 	height: 60px;
+	cursor: pointer;
 	@include adaptive($d){
 		display: block;
 		position: absolute;
@@ -50,6 +58,15 @@
 	@include adaptive($t){
 		top: 0;
 		left: auto;
-		right: 0;
+		right: 2.5%;
+	}
+	@include adaptive($mb) {
+		right: 1%;
+		width: 50px;
+		height: 50px;
+	}
+	@include adaptive($m) {
+		width: 40px;
+		height: 40px;
 	}
 }
